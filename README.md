@@ -7,10 +7,13 @@ Course Project
 Dean Draayer
 ```
 
-* Original study and source of data: <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>
-* `README.md`: This file
-* `CodeBook.md`:
-* `tidy_data.txt`: The tidy dataset, which can be read into R via `read.table('tidy_data.txt', header=TRUE)`
+See <https://class.coursera.org/getdata-032/human_grading/index> for a description of the Course Project. For more information about the original study and source of the data, see <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>.
+
+### Files
+
+* `README.md`: This file.
+* `CodeBook.md`: Detailed description of the structure and contents of the dataset.
+* `tidy_data.txt`: The tidy dataset itself - see `CodeBook.md` for details.
 
 
 ### Data Cleaning
@@ -33,4 +36,4 @@ The following procedure was used to assemble and clean the original data into a 
 ### Construction of the tidy dataset
 
 * This is formed from the combined dataset by grouping by subject ID and activity and computing the mean for each measurement variable for each resulting group.
-* The tidy dataset was then written out to `tidy_data.txt`. It can be read back in via `read.table('tidy_data.txt', header=TRUE)`.
+* The tidy dataset was then written out to `tidy_data.txt`. It can be read back in to R via `read.table('tidy_data.txt', header=TRUE)`.
